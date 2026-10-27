@@ -1,0 +1,47 @@
+aircondit              package:AA                   R Documentation
+
+Failure Times for Air-Conditioning Units
+
+Description:
+
+     The 'aircondit' data frame has 199 rows and 2 columns.
+
+     Proschan (1963) reported on the times between failures of the 
+     air-conditioning equipment in 10 Boeing 720 aircraft. The   
+     'aircondit' data frame contains the intervals for the failure time
+     (hours) for air-conditioning units in the ten aircraft.
+
+Usage:
+
+     data(aircondit)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'number' the number of aircraft (label from 1 to 10);
+
+     'time' the time interval in hours between successive failures of
+          the  air-conditioning equipment.
+
+Source:
+
+     The data were obtained from
+
+     Cox, D.R. and Snell, E.J. (1981).  _Applied Statistics: Principles
+     and Examples_.  Chapman & Hall, London.  Example T.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 7.5.
+
+     Proschan, F. (1963).  Theoretical explanation of observed
+     decreasing failure rate.  _Technometrics_, *5*, 375-383.
+
+Examples:
+
+     data(aircondit)
+     plot(time ~ factor(number), data = aircondit, xlab = "aircraft", 
+          ylab = "failure time")

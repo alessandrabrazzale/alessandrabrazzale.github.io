@@ -1,0 +1,39 @@
+hubble                package:AA                     R Documentation
+
+Space Telescope Science Institute Employment Data
+
+Description:
+
+     The 'hubble' data frame has 2 rows and 3 columns.
+
+     Employment of men and women at the Space Telescope Science
+     Institute at Baltimore, which manages the Hubble Space Telescope. 
+     Five of the seven women scientists hired in the period 1998-2002
+     left within that period, while only one of 19 men hired in that
+     period did so.
+
+Usage:
+
+     data(hubble)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'r' the number of employees who left in the period 1998-2002;
+
+     'm' the total number of employees hired in the period 1998-2002;
+
+     'x' a factor variable for gender (0 = male, 1 = female).
+
+Source:
+
+     The data were obtained from
+
+     _Science_, Volume *299* (14 February 2003), Page 993.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 3.4.

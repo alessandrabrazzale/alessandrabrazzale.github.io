@@ -1,0 +1,47 @@
+calib                package:AA                     R Documentation
+
+Blood Plasma Data
+
+Description:
+
+     The 'calib' data frame has 27 rows and 2 columns.
+
+     The data show the measurements of the concentration of an enzyme
+     in  human blood plasma.  The true concentration 'x' is obtained
+     using an  accurate but expensive laboratory method, while the
+     measured concentration 'y' is obtained by a faster and less
+     expensive automatic method.  The goal is to use the observed data
+     pairs to estimate values of the true concentration based on
+     further measurements using the less expensive method.
+
+Usage:
+
+     data(calib)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'x' the true expensive measurement;
+
+     'y' the less expensive measurement.
+
+Source:
+
+     The data were obtained from
+
+     Aitchison, J. and Dunsmore, I.R. (1975).  _Statistical Prediction
+     Analysis_.  Cambridge University Press, Cambridge.   Page 183.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 7.2.
+
+Examples:
+
+     data(calib)
+     plot(x ~ y, data = calib)
+     mod <- lm(x ~ y, data = calib)
+     abline(mod)

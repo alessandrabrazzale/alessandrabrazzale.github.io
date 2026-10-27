@@ -1,0 +1,56 @@
+babies                 package:cond                 R Documentation
+
+Crying Babies Data
+
+Description:
+
+     The 'babies' data frame has 36 rows and 4 columns.
+
+     Matched pairs of binary observations concerning the crying of
+     babies.  The babies were observed on 18 days and on each day one
+     child was lulled.  Interest focuses on the treatment effect 
+     "lulling".
+
+Usage:
+
+     data(babies)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'r1' number of children not crying on one day;
+
+     'r2' number of children crying on one day;
+
+     'lull' indicator variable for the treatment;
+
+     'day' factor variable for the days.
+
+Source:
+
+     The data were obtained from
+
+     Cox, D. R. (1970) _Analysis of Binary Data_ (page 61).  London:
+     Chapman & Hall.
+
+References:
+
+     Davison, A. C. (1988) Approximate conditional inference in 
+     generalized linear models.  _ J. R. Statist. Soc._ B,  *50*,
+     445-461.
+
+Examples:
+
+     data(babies)
+     coplot(r2/(r1+r2) ~ day | lull, data = babies)
+     ##
+     babies.glm <- glm(formula = cbind(r1, r2) ~ day + lull - 1, 
+                       family = binomial, data = babies)
+     babies.cond <- cond(object = babies.glm, offset = lullyes)
+     babies.cond
+     ##
+     ## If one wishes to avoid the generalized linear model fit:
+     babies.cond <- cond.glm(formula = cbind(r1, r2) ~ day + lull - 1, 
+                             family = binomial, data = babies, offset = lullyes)
+     babies.cond

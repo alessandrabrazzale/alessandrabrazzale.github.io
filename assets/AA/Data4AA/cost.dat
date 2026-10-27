@@ -1,0 +1,47 @@
+cost                 package:AA                      R Documentation
+
+Cost Data
+
+Description:
+
+     The 'cost' data frame has 31 rows and 2 columns.
+
+     It gives the costs of treatment for two groups of patients with a
+     history of deliberate self harm.  One group received the usual
+     therapy, and the other received cognitive behavioural therapy. 
+     The data were collected to compare the costs of the two
+     treatments.
+
+Usage:
+
+     data(cost)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'f' group number;
+
+     'y' costs (pounds sterling) of cognitive behavioural therapy
+          (group 1) and of the usual therapy (group 2) for patients
+          with a history of  deliberate self harm.
+
+Source:
+
+     The data were obtained from
+
+     Evans, K., Tyrer, P., Catalan, J. _et al._ (1999). 
+     Manual-assisted-cognitive-behavaviour therapy in the treatment of
+     recurrent deliberate self harm: A randomised controlled trial. 
+     _Psychological Medicine_, *29*, 19-25.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 3.5.
+
+Examples:
+
+     data(cost)
+     plot(y ~ factor(f), data = cost, xlab = "therapy", ylab = "cost of therapy")

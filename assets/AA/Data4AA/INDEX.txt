@@ -1,0 +1,47 @@
+-------------------------------------
+Data4AA: Data for Applied Asymptotics
+-------------------------------------
+
+This file is INDEX.txt
+++++++++++++++++++++++
+
+---------------------------------------------------------------
+Code Name      Real Name                      Package
+---------------------------------------------------------------
+achd           Coronary Heart Disease Data    AA
+acme           Market Return Data             boot
+aircondit      Air-Conditioning Data          AA
+babies         Crying Babies Data             cond
+boothb         Analgesic Data                 AA
+C1             Herbicide Data                 nlreg
+C2             Herbicide Data                 nlreg
+C3             Herbicide Data                 nlreg
+C4             Herbicide Data                 nlreg
+calcium        Calcium Uptake Data            boot
+calib          Blood Plasma Data              AA
+cost           Cost Data                      AA                   
+daphnia        'Daphnia magna' Data           nlreg
+darwin         Darwin's Maize Data            marg
+dental         Dental Status Data             AA
+helicopter     Paper Helicopter Data          nlreg
+hirose         PET Film Data                  boot
+houses         House Price Data               marg
+hubble         Astronomer Data                AA
+leuk           Leukaemia Data                 AA
+lung.cancer    Smoking Data                   SMPracticals
+M2             Herbicide Data                 nlreg
+M4             Herbicide Data                 nlreg
+manufact       Manufacturing Process Data     AA
+nuclear        Nuclear Power Station Data     marg
+reactor        Temperature Data               AA
+ria            Radioimmunoassay Data          nlreg
+risk           Multiple Myeloma Data          AA
+Traffic        Speed Limit Data               MASS
+treePref       Grazing Data (preference)      AA
+treeSurv       Grazing Data (survival)        AA
+urine          Urine Data                     cond
+voltage        Voltage Regulator Data         AA
+wasps          Wasp Data                      AA
+---------------------------------------------------------------
+Last modified by alessandra.brazzale@unipd.it on 02/12/2011 
+---------------------------------------------------------------

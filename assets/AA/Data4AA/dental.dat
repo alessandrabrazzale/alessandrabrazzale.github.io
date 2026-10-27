@@ -1,0 +1,53 @@
+dental                package:AA                     R Documentation
+
+Data on Dental Status of Children
+
+Description:
+
+     The 'dental' data frame has 9 rows and 2 columns.
+
+     This data set gives the dental status of children according to an
+     index that takes values in 0-8, as obtained from a prospective
+     survey of school children.
+
+Usage:
+
+     data(dental)
+
+Format:
+
+     The 'dental' data frame contains the following columns:
+
+     'index' the dental status of children according to an index that
+          takes values in 0-8;
+
+     'frequency' number of children who have the corresponding detal
+          status.
+
+Source:
+
+     The data were obtained from
+
+     Bohning, D., Dietz, E., Schlattman,P., Mendorca, L. and Kirchner,
+     U. (1991).  The zero-inflated Poisson model and the decayed,
+     missing and filled teeth index in dental epidemiology.  _Journal
+     of the Royal Statistical Society, Series A_, *162*, 195-209.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Problem 29.
+
+     Castillo, J.D. and Lopez-Ratera, A. (2006).  Saddlepoint
+     approximation in exponential models with boundary points. 
+     _Bernoulli_, *12*, 491-500.
+
+     Deng, D. and Paul, S.R. (2005).  Score tests for zero-inflation
+     and over-dispersion in generalized linear models.  _Statistica
+     Sinica_, *15*, 257-276.
+
+Examples:
+
+     data(dental)
+     barplot(dental$frequency)

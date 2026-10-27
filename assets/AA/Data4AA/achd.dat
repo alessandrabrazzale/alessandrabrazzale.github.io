@@ -1,0 +1,45 @@
+achd                 package:AA                      R Documentation
+
+Age and Coronary Heart Disease Data
+
+Description:
+
+     The 'achd' data frame has 100 rows and 2 columns.
+
+     The data set reports age (in years) and presence/absense (1/0) of
+     coronary heart disease for 100 subjects.
+
+Usage:
+
+     data(achd)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'age' the age of subjects (in years);
+
+     'disease' the presence/absence of coronary heart disease (as 1/0). 
+
+Source:
+
+     The data were obtained from
+
+     Hosmer, D.W. and Lemeshow, S. (1989).  _Applied Logistic
+     Regression_.  Wiley, New York.  Chapter 1.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Problem 22.
+
+     Sweeting, T.J. (2005).  On the implementation of local probability
+     mathching priors for interest parameters.  _Biometrika_, *92*,
+     47-57.
+
+Examples:
+
+     data(achd)
+     plot(disease ~ age, data = achd)
+     plot(age ~ factor(disease), data = achd)

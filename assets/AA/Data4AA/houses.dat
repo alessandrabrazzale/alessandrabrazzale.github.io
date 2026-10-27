@@ -1,0 +1,44 @@
+houses                 package:marg                 R Documentation
+
+House Price Data
+
+Description:
+
+     The 'houses' data frame has 26 rows and 5 columns.
+
+     Ms. Terry Tasch of Long-Kogan Realty, Chicago, provides data on 
+     the selling prices of houses and on different variables describing
+     their status.  This data frame contains the prices and a subset of
+     the covariates.
+
+Usage:
+
+     data(houses)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'price' selling price (in thousands of dollars);
+
+     'bdroom' number of bedrooms;
+
+     'floor' floor space (in square feet);
+
+     'rooms' total number of rooms;
+
+     'front' front footage of lot (in feet).
+
+Source:
+
+     The data were obtained from
+
+     Sen, A. and Srivastava, M. (1990) _Regression Analysis: Theory,
+     Methods and Applications_ (Exhibit 2.2, page 32).  New York:
+     Springer-Verlag.
+
+Examples:
+
+     data(houses)
+     summary(houses)
+     pairs(houses)

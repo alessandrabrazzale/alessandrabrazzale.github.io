@@ -1,0 +1,47 @@
+boothb                package:AA                     R Documentation
+
+Data on Responses to Analgesic
+
+Description:
+
+     The 'boothb' data frame has 18 rows and 2 columns.
+
+     This data set contains the responses for two groups of subjects to
+     a  given analgesic: the numbers reported are the differences in
+     pain response for each subject, before and after treatment.
+
+Usage:
+
+     data(boothb)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'y' the differences in pain response for each subject, before and 
+          after use of the analgesic;
+
+     'Group' the group indicator (1/0) for each subject;
+
+Source:
+
+     The data were obtained from
+
+     Petrie, A. (1978).  _Individuality in Pain and Suffering_ (2nd 
+     Ed.).  University of Chicago Press, Chigago.  Page 54.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 7.8.
+
+     Booth, J.G. and Butler, R.W. (1990).  Randomization distributions 
+     and saddlepoint approximations in generalized linear models.  
+     _Biometrika_, *77*, 787-796.
+
+Examples:
+
+     data(boothb)
+     plot(y ~ factor(Group), data = boothb, xlab = "group", 
+          ylab = "differences in pain response")
