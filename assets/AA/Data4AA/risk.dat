@@ -1,0 +1,51 @@
+risk                 package:AA                      R Documentation
+
+Survival of Multiple Myeloma Patients
+
+Description:
+
+     The 'risk' data frame has 21 rows and 4 columns.
+
+     Data on survival of multiple myeloma patients following two
+     different chemotherapy treatments in a Cancer and Leukaemia Group
+     B trial.  The data contain outcomes for 156 patients at 21
+     institutions, an average of 7.4 patients per institution.
+
+Usage:
+
+     data(risk)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'n1' the number of patients following treatment method one;
+
+     'y1' the number of survival patients following treatment method
+          one;
+
+     'n2' the number of patients following treatment method two;
+
+     'y2' the number of survival patients following treatment method
+          two.
+
+Source:
+
+     The data were obtained from
+
+     Lipsitz, S.R., Dear, K.B.G., Laird, N.M. and Molenberghs, M.
+     (1998).  Tests for homogeneity of the risk difference when data
+     are sparse.  _Biometrics_, *54*, 148-160.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 4.4.
+
+Examples:
+
+     data(risk)
+     attach(risk)
+     boxplot(y1/n1, y2/n2, xlab = "treatment method", ylab = "proportion of survival")
+     detach()

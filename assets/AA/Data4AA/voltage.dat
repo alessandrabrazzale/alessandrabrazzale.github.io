@@ -1,0 +1,48 @@
+voltage               package:AA               R Documentation
+
+Test Results of Voltage Regulators for Automobiles
+
+Description:
+
+     The 'voltage' data frame has 256 rows and 4 columns.
+
+     A regulator selected randomly from the production line was
+     adjusted  at one of a number of setting stations, and then tested
+     at each of  four testing stations, giving the data set.
+
+Usage:
+
+     data(voltage)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'Set' a factor variable for the setting station;
+
+     'Reg' a factor variable giving the regulator number;
+
+     'Test' a factor variable for the testing station;
+
+     'y' the response variable for each test.
+
+Source:
+
+     The data were obtained from
+
+     Cox, D.R. and Snell, E.J. (1981),  _Applied Statistics: Principles
+     and Examples_.  Chapman & Hall, London.  Page 140.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 7.3.
+
+Examples:
+
+     data(voltage)
+     par(mfrow = c(1,3))
+     boxplot(y ~ Set, data = voltage, main="setting station")
+     boxplot(y ~ Test, data = voltage, main="testing station")
+     boxplot(y ~ Reg, data = voltage, main="regulator number")

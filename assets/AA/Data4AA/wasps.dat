@@ -1,0 +1,71 @@
+wasps                package:AA                     R Documentation
+
+Wasps Data
+
+Description:
+
+     The 'wasps' data frame has 720 rows and 8 columns.
+
+     Britta Tschanz and Sven Bacher, of the Zoological Institute at the
+     University of Bern, conducted an experiment to examine the
+     behaviour of a predator-prey system in relatively natural 
+     conditions, with neither prey nor predators confined during
+     predation.
+
+     Three nests of the wasps were collected before the emerging phase
+     and glued to the tops of insect cages.  Forty creeping thistle
+     plants in a patch in a meadow were individually numbered.  Early
+     on 32 days in the  summer of 2004 naturally occurring shield
+     beetle larvae were removed and  replace by others placed visibly
+     on randomly chosen thistle plants.   The 32 days were divided into
+     eight blocks of four days, and treatments with different numbers
+     of prey  and open cages were applied with 0, 1, 2, or 3 open
+     cages, and with 5,  10, ..., 35 or 40 prey placed on
+     randomly-chosen thistles.  At the  end of the day the plants were
+     checked and the survival or not of each larva was noted; this is
+     treated as a binary response.  The number of  individual wasps
+     visiting the patch was estimated by extrapolation from  the number
+     visiting during the peak hour just after noon, which were  caught,
+     marked using dye, and released.
+
+Usage:
+
+     data(wasps)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'day' the number of days of each observation;
+
+     'mon' the month indicator of each observation in (6-8);
+
+     'plant' a factor variable for indicating the different plants
+          (1-40);
+
+     'cages' a factor variable for indicating the different cages
+          (0-3);
+
+     'm' the number of larvae of each observation;
+
+     'r' a binary variable which indicates the survival or not of each
+          larva (0/1);
+
+     'w' a variable for the estimated number of wasps that visit the
+          patch;
+
+     't' the duration of each observation. 
+
+Source:
+
+     The data were obtained from an experiment conducted in summer of
+     2004 by  Britta Tschanz and Sven Bacher of the Zoological
+     Institute at the  University of Bern on the behaviour of the paper
+     wasp _Polistes  dominulus_ in the presence of their prey, larvae
+     of the shield beetle  _Cassida rubiginosa_.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 6.2.

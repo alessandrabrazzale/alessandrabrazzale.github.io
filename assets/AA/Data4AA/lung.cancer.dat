@@ -1,0 +1,39 @@
+lung.cancer           package:SMPracticals           R Documentation
+
+Lung Cancer Deaths among UK Physicians
+
+Description:
+
+     The data give the number of deaths due to lung cancer in British
+     male physicians, as a function of years of smoking and cigarette
+     consumption.
+
+Usage:
+
+     data(smoking)
+
+Format:
+
+     A data frame with 63 observations on the following 4 variables.
+
+     'duration' a factor giving the number of years smoking;
+
+     'consumption' a factor giving cigarette consumption;
+
+     'time' man-years at risk;
+
+     'deaths' number of deaths.
+
+Source:
+
+     Frome, E. L. (1983).  The analysis of rates using Poisson
+     regression models. _Biometrics_, *39*, 665-674.
+
+References:
+
+     Davison, A. C. (2003)  _Statistical Models_.  Cambridge University
+     Press.  Page 8.
+
+Examples:
+
+     data(smoking)

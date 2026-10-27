@@ -1,0 +1,47 @@
+leuk                 package:AA                      R Documentation
+
+Survival Times and White Blood Cell Counts
+
+Description:
+
+     The 'leuk' data frame has 17 rows and 2 columns.
+
+     Survival times in weeks of 17 patients with leukaemia, along with
+     their base 10 logarithm of the white blood cell counts at the time
+     of diagnosis.
+
+Usage:
+
+     data(leuk)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'x' the logarithm (base 10) of the white blood cell counts for
+          each patient;
+
+     't' the survival time in weeks of leukaemia patients.
+
+Source:
+
+     The data were obtained from
+
+     Feigl, P. and Zelen, M. (1965).  Estimation of exponential
+     survival probabilities with concomitant information. 
+     _Biometrics_, *21*, 826-838.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 5.5.
+
+     Cox, D.R. and Snell, E.J. (1981).  _Applied Statistics: Principles
+     and Examples_.  Chapman & Hall, London.  Example U.
+
+Examples:
+
+     data(leuk)
+     plot(t ~ x, data = leuk, xlab = "white blood cell counts", 
+          ylab = "survival time")

@@ -1,0 +1,43 @@
+reactor               package:AA                    R Documentation
+
+Measured and Theoretical Temperatures of a Chemical Reactor
+
+Description:
+
+     The 'reactor' data frame has 20 rows and 2 columns.
+
+     It reports the measured and theoretical temperatures in 20
+     sections of a chemical reactor.
+
+Usage:
+
+     data(reactor)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'measured' the temperature measured in each of 20 sections of a
+          chemical reactor;
+
+     'theoretical' the theoretical temperature.
+
+Source:
+
+     The data were obtained from
+
+     Cox, D.R. and Snell, E.J. (1981).  _Applied Statistics: principles
+     and Examples_.  Chapman & Hall, London.  Example D.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Problem 37.
+
+Examples:
+
+     data(reactor)
+     plot(measured ~ theoretical, data = reactor, xlim = c(400, 520),
+          ylim = c(400, 520))
+     abline(0, 1)

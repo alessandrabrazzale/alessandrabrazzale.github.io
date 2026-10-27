@@ -1,0 +1,53 @@
+treeSurv               package:AA               R Documentation
+
+Data on Seedling Survival and Growth
+
+Description:
+
+     The 'treeSurv' data frame has 253 rows and 5 columns.
+
+     Experiment conducted to assess the effect of competition on
+     seedling survival and growth, four areas of the larger field were
+     closed to  cattle. Half of each area was mowed, and four
+     replications of the  previous eight combinations of species and
+     height were placed randomly into each half at the points of a
+     regular grid, eventually yielding  a total of a further 256 binary
+     responses, indicating whether the  seedlings were dead or alive
+     after a specified period.Due to the fact  that three are missing,
+     the number of binary responses is 253 in total.
+
+Usage:
+
+     data(treeSurv)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'Block' a factor variable for the areas used in the experiment;
+
+     'Competition' a factor variable for competition status (in
+          With/Without);
+
+     'Species' a factor variable for the seedling species;
+
+     'Height' a factor variable for the seedling height (in
+          Small/Large);
+
+     'Survival' a factor variable for the seedling growth (in
+          Alive/Dead) ;
+
+Source:
+
+     The data were obtained from
+
+     the two experiments conducted by in the summer of 2003 by
+     Charlotte  Vandenberghe and Francois Frelechoux of the Swiss
+     Federal Institute for Forest, Snow and Landscape Research, and
+     colleagues.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 6.3.

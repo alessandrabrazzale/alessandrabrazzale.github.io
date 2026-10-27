@@ -1,0 +1,55 @@
+treePref               package:AA                    R Documentation
+
+Data on Cattle Grazing
+
+Description:
+
+     The 'treePref' data frame has 256 rows and 5 columns.
+
+     In this experiment, sixteen square plots of side 8 metres were
+     chosen randomly in each of two fields, and eight tree seedlings
+     were planted at the mid-points and corners of each plot. The
+     seedlings comprised four species of tree, fir, maple, beech, and
+     spruce, in pairs, one 20 cm and one 60 cm in height.  Herds of
+     cows were introduced into the two fields, and after a period it
+     was observed whether or not each seedling had been grazed.  
+
+     This is a split-plot experiment in which the sub-plot design is a
+     4 x 2 factorial (species x height) and the response is binary
+     (grazed or ungrazed), but with the two fields and hence the plots
+     within them subject to different grazing pressures, owing to the
+     different sizes.  There are in alla 256 responses in this
+     experiment.
+
+Usage:
+
+     data(treePref)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'Field' a factor variable for the field (13/23);
+
+     'Blockk' a factor variable for the block (1-32);
+
+     'Species' a factor variable for the seedling species (Abies, Acer,
+          Fagus, Picea);
+
+     'Height' a factor variable for the seedling height (Small/Large);
+
+     'State' the response variable of this experiment
+          (Grazed/Ungrazed).
+
+Source:
+
+     The data were obtained from two experiments conducted in the
+     summer of 2003 by Charlotte Vandenberghe, Francois Frelechoux and
+     colleagues of the Swiss Federal Institute for Forest, Snow and
+     Landscape Research.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Example 6.3.

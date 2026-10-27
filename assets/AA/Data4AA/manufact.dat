@@ -1,0 +1,42 @@
+manufact               package:AA                    R Documentation
+
+Data on Faults in a Manufacturing Process
+
+Description:
+
+     The 'manufact' data frame has 22 rows and 3 columns.
+
+     Data on faults in a manufacturing process.  Each of 22 batches of
+     raw  material was divided into two parts and processed by one of
+     two  methods ('standard' and 'modified').  The response is the
+     presence or  absence of faults in the finished product.  A single
+     covariate, purity  index, was measured before the processing.
+
+Usage:
+
+     data(manufact)
+
+Format:
+
+     This data frame contains the following columns:
+
+     'standard' the number of faults in a manufacturing process using
+          the standard method;
+
+     'modified' the number of faults in a manufacturing process using
+          the modified method;
+
+     'purity' the purity index measured before the processing.
+
+Source:
+
+     The data were obtained from
+
+     Cox, D.R. and Snell, E.J.(1981).  _Applied Statistics: Principles
+     and Examples_.  Chapman & Hall, London.  Example H.
+
+References:
+
+     Brazzale, A.R., Davison, A.C. and Reid, N. (2007).  _Applied 
+     Asymptotics: Case Studies in Small-Sample Statistics_.  Cambridge 
+     University Press, Cambridge.  Problem 28.
