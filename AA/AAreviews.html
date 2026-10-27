@@ -98,10 +98,6 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about-me.html"> 
-<span class="menu-text">About Me</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../education.html"> 
 <span class="menu-text">Education</span></a>
   </li>  
@@ -112,6 +108,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../software.html"> 
+<span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../teaching.html"> 
@@ -180,25 +180,25 @@ ul.task-list li input[type="checkbox"] {
  
 <ul>
 
-  <li><a href="../www/AA/reviews/MCJones_JApplStatist.pdf">M. C. Jones</a> in <a href="http://www.tandf.co.uk/journals/titles/02664763.asp"><i>Journal of Applied Statistics</i></a>, 2008, <b>35</b>(1), pp. 125-126.</li>
+  <li><a href="../assets/AA/reviews/MCJones_JApplStatist.pdf">M. C. Jones</a> in <i>Journal of Applied Statistics</i>, 2008, <b>35</b>(1), pp. 125-126.</li>
    <br>
    "This is a somewhat unorthodox book, but a welcome one.  It is about the application — yes, the application — of the higher order asymptotics of likelihood theory. ..."
    <br><br>
 
 
-  <li><a href="../www/AA/reviews/ARobinson_JRSS.A.pdf">A. Robinson</a> in <a href="http://www.blackwellpublishing.com/journal.asp?ref=0964-1998&amp;site=1"><i>Journal of the Royal Statistical Society, Series A</i></a>, 2008, <b>171</b>(2), pp. 504-505.</li>
+  <li><a href="../assets/AA/reviews/ARobinson_JRSS.A.pdf">A. Robinson</a> in <i>Journal of the Royal Statistical Society, Series A</i>, 2008, <b>171</b>(2), pp. 504-505.</li>
    <br>
    "This is a very welcome book, on a very important topic. The authors demonstrate the use of applied asymptotics for estimation and inference on a wide range of case-studies. Overall the book is a solid and useful contribution to applied statistics. Students of statistics and practising statisticians will find much to study and learn here. ..."
    <br><br>
 
 
-  <li><a href="../www/AA/reviews/LWaldorp_Biometrics.pdf">L. Waldorp</a> in <a href="http://www.wiley.com/bw/journal.asp?ref=0006-341x"><i>Biometrics</i></a>, 2008, <b>64</b>(2), p. 660.</li>
+  <li><a href="../assets/AA/reviews/LWaldorp_Biometrics.pdf">L. Waldorp</a> in <i>Biometrics</i>, 2008, <b>64</b>(2), p. 660.</li>
    <br>
    "... By writing this book, I think the authors have succeeded in making higher order theory more accessible and they will succeed in getting more scientists involved in this theory ..."
    <br><br>
 
 
-   <li><a href="../www/AA/reviews/MJCrowder_IntStatRev.pdf">M. J. Crowder</a> in <a href="http://isi.cbs.nl/isr.htm"><i>International Statistical Review</i></a>, 2007, <b>75</b>(3), pp. 424-425.</li>
+   <li><a href="../assets/AA/reviews/MJCrowder_IntStatRev.pdf">M. J. Crowder</a> in <i>International Statistical Review</i>, 2007, <b>75</b>(3), pp. 424-425.</li>
    <br>
    "... However, accepting that the models are pragmatically correct, the authors here show some impressive results.  The improved accuracy of higher-order asymptotics in the examples shown here is quite eye catching, even when applied to samples of size one.  One is left with the uncomfortable feeling of laziness in routinely relying on the usual (first-order) theory, though the authors are too polite to put this into words. ..."
    <br><br>
@@ -234,10 +234,9 @@ ul.task-list li input[type="checkbox"] {
 <script>
   const headerTitle = document.querySelector('#quarto-header a.navbar-brand:not(.navbar-brand-logo)');
   if (headerTitle) {
-    const label = document.createElement('span');
-    label.className = headerTitle.className;
-    label.append(...headerTitle.childNodes);
-    headerTitle.replaceWith(label);
+    const siteOffset = document.querySelector('meta[name="quarto:offset"]')?.content || './';
+    headerTitle.href = siteOffset + 'about-me.html';
+    headerTitle.title = 'About Me';
   }
   const headerNavbar = document.querySelector('#quarto-header .navbar');
   if (headerNavbar) {

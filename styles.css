@@ -9,6 +9,9 @@
   --page-width: 980px;
   --content-width: 820px;
   --body-font-size: 16px;
+  --body-line-height: 1.5;
+  --table-line-height: 1.55;
+  --compact-table-line-height: 1.25;
   --h1-font-size: 1.35rem;
   --h2-font-size: 1.18rem;
   --h3-font-size: 1rem;
@@ -31,7 +34,7 @@ body {
   color: var(--text);
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: var(--body-font-size);
-  line-height: 1.5;
+  line-height: var(--body-line-height);
   background: #ffffff;
 }
 
@@ -90,8 +93,8 @@ a {
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .navbar .navbar-nav .nav-link {
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 
@@ -155,6 +158,20 @@ h1.title {
 
 .content-column p {
   margin: 16px 0 0;
+}
+
+.content-column :is(p, li) {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+.content-column table {
+  font-size: var(--body-font-size);
+  line-height: var(--table-line-height);
+}
+
+.content-column :is(td, th) :is(p, li) {
+  line-height: inherit;
 }
 
 .content-column h1,
@@ -254,7 +271,7 @@ h1.title {
 .subtitle {
   margin: 14px 0 0;
   font-size: var(--body-font-size);
-  line-height: 1.25;
+  line-height: var(--body-line-height);
 }
 
 .social-links {
@@ -267,12 +284,6 @@ h1.title {
 
 .social-links a {
   color: var(--text);
-}
-
-.research-list p {
-  margin: 0;
-  padding: 4px 0;
-  line-height: 1.15;
 }
 
 .research-list h2 {
@@ -299,18 +310,19 @@ h1.title {
   border: 0;
 }
 
-.compact-table {
+.content-column .compact-table {
   --bs-table-color: var(--text);
   width: 100%;
   margin: 8px 0 0;
   border-collapse: collapse;
-  line-height: 1.15;
+  line-height: var(--compact-table-line-height);
 }
 
 .compact-table th,
 .compact-table td {
   padding: 4px 0;
   vertical-align: top;
+  line-height: var(--compact-table-line-height);
   border: 0;
 }
 
@@ -353,6 +365,11 @@ h1.title {
 
 .contact-card h1 {
   margin-bottom: 20px;
+}
+
+.content-column.contact-card p {
+  margin-top: 6px;
+  line-height: 1.2;
 }
 
 .aa-content {
@@ -414,7 +431,7 @@ h1.title {
   gap: 12px;
   padding: 0;
   text-align: left;
-  line-height: 1.5;
+  line-height: var(--table-line-height);
 }
 
 .aa-author-contacts address {

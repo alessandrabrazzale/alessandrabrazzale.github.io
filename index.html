@@ -98,10 +98,6 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about-me.html"> 
-<span class="menu-text">About Me</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./education.html"> 
 <span class="menu-text">Education</span></a>
   </li>  
@@ -112,6 +108,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./software.html"> 
+<span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
@@ -168,10 +168,9 @@ ul.task-list li input[type="checkbox"] {
 <script>
   const headerTitle = document.querySelector('#quarto-header a.navbar-brand:not(.navbar-brand-logo)');
   if (headerTitle) {
-    const label = document.createElement('span');
-    label.className = headerTitle.className;
-    label.append(...headerTitle.childNodes);
-    headerTitle.replaceWith(label);
+    const siteOffset = document.querySelector('meta[name="quarto:offset"]')?.content || './';
+    headerTitle.href = siteOffset + 'about-me.html';
+    headerTitle.title = 'About Me';
   }
   const headerNavbar = document.querySelector('#quarto-header .navbar');
   if (headerNavbar) {
